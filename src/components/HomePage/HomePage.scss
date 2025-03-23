@@ -1,0 +1,56 @@
+.HomePageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+
+.HomePage {
+    color: rgb(12, 183, 235);
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(12, 183, 235);
+    /* רקע כפתור חצי שקוף */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(12, 183, 235);
+    border: rgb(12, 183, 235) 2px solid;
+
+}
+
+footer {
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+}

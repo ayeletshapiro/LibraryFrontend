@@ -1,0 +1,54 @@
+.BookList {
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem; // Adjust the gap as needed
+
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 10px;
+        // border: 1px solid #ddd;
+        border-radius: 5px;
+    
+        button {
+          margin: 0 1px;
+          padding: 10px 15px;
+          border: 1px solid #ddd;
+          border-radius: 3px;
+          background-color: white;
+          color: #007bff;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s, transform 0.3s;
+    
+          &.active {
+            background-color: #007bff;
+            color: white;
+          }
+    
+          &:hover {
+            background-color: #0056b3;
+            color: white;
+          }
+    
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 5px #0056b3;
+          }
+    
+          &:active {
+            background-color: #003f7f;
+            transform: scale(0.95);
+          }
+    
+          &:disabled {
+            cursor: not-allowed;
+            background-color: #e9ecef;
+            color: #6c757d;
+          }
+        }
+      }
+}

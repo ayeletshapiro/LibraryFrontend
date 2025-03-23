@@ -1,0 +1,60 @@
+.BookCard {
+    .card {
+      width: 93%;
+      height: 200px;
+      border-radius: 20px;
+      background: #f5f5f5;
+      position: relative;
+      padding: 3%;
+      border: 2px solid #c3c6ce;
+      transition: 0.5s ease-out;
+      overflow: visible;
+      text-align: center;
+    }
+  
+    .card-details {
+      color: black;
+      height: 100%;
+      gap: 1%;
+      display: grid;
+      place-content: center;
+    }
+  
+    .card-button {
+      transform: translate(-50%, 125%);
+      border-radius: 1rem;
+      border: none;
+      background-color: #008bf8;
+      color: #fff;
+      font-size: 100%;
+      padding: .5rem 1rem;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      opacity: 0;
+      transition: 0.3s ease-out;
+      cursor: pointer;
+    }
+  
+    .text-body {
+      color: rgb(134, 134, 134);
+    }
+    
+    .text-title {
+      font-size: 123%;
+      font-weight: bold;
+    }
+  
+    .card:hover {
+      border-color: #008bf8;
+      box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    }
+  
+    .card:hover .card-button {
+      transform: translate(-50%, 50%);
+      opacity: 1;
+    }
+    .blue{
+      background-color: rgb(11, 4, 114);
+    }
+  }
